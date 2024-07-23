@@ -1,31 +1,19 @@
 local global = vim.g
 local o = vim.o
+global.mapleader = "\\"
+global.maplocalleader = "\\"
 
--- Map <leader> = the space key
-
-global.mapleader = " "
-global.maplocalleader = " "
-
--- Editor options
+vim.scriptencoding = "utf-8"
 
 o.number = true
 o.relativenumber = true
-o.clipboard = "unnamedplus"
 o.syntax = "on"
 o.autoindent = true
+o.smartindent = true
+o.clipboard = "unnamedplus"
+o.tabstop = 4
+o.shiftwidth = 4
+o.redrawtime = 10000
 o.cursorline = true
-o.expandtab = true
-o.shiftwidth = 2
-o.tabstop = 2
-o.encoding = "UTF-8"
-o.ruler = true
-o.mouse = false
-o.title = true
-o.hidden = true
-o.ttimeoutlen = 0
-o.wildmenu = true
-o.showcmd = true
-o.showmatch = true
-o.inccommand = "split"
-o.splitbelow = "splitright"
-o.termguicolors = true
+o.viminfo = "'100,<0,s10,h"
+
