@@ -1,17 +1,12 @@
 local function map(mode, lhs, rhs)
-    vim.keymap.set(mode, lhs, rhs, { silent = true })
+	vim.keymap.set(mode, lhs, rhs, { silent = true })
 end
 
 
-local status, telescope = pcall(require, "telescope.builtin")
-if status then
-    -- Telescope
-    map("n", "<leader>ff", telescope.find_files)
-    map("n", "<leader>fb", telescope.buffers)
-    map("n", "<leader>fh", telescope.help_tags)
-else
-    print("Telescope not found")
-end
+-- Telescope
+map("n", "<leader>ff", "<CMD>Telescope find_files<CR>")
+map("n", "<leader>fb", "<CMD>Telescope buffers<CR>")
+map("n", "<leader>fh", "<CMD>Telescope help_tags<CR>")
 
 
 --Resize Windows

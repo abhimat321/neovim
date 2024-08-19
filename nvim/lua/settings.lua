@@ -1,7 +1,5 @@
 local global = vim.g
 local o = vim.o
-global.mapleader = "\\"
-global.maplocalleader = "\\"
 
 vim.scriptencoding = "utf-8"
 

@@ -46,7 +46,7 @@ cmp.setup({
         ghost_text = true,
         border = function()
             local border_chars = {}
-            local border_highlight = 'FloatBorder'
+            local border_highlight = 'Blue'
 
             -- Top border
             table.insert(border_chars, {'╭', border_highlight})
@@ -80,12 +80,12 @@ cmp.setup({
 --border = { "╭", "", "╮", "│", "╯", "", "╰", "│" },
 			border = "rounded",
 			scrollbar = false,
-			winhighlight = "Normal:None,FloatBorder:Label,CursorLine:IncSearch,Search:None",
+			winhighlight = "Normal:None,FloatBorder:Blue,CursorLine:IncSearch,Search:None",
 			padding = 2
 		},
 		documentation = {
 			border = "single",
-			
+
 			winhighlight = "Normal:None,FloatBorder:Label,CursorLine:IncSearch,Search:None",
 		}
 	},
@@ -119,5 +119,4 @@ cmp.setup({
     },
 
 })
-
 
